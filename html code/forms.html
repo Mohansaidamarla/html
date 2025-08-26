@@ -1,0 +1,124 @@
+
+<html>
+    <head>
+        <title>Ts rtc Bus Pass Application </title>
+    </head>
+    <body>
+        <form action="./submit.html">         
+            <img src="./ts_bus.jpg" width="100%">
+            <fieldset>
+                <legend style="background:lightblue;">Applicant Details</legend>
+           <table width="100%">
+            <tr>
+              <td><label for="name">Name <sup style="color:red">*</sup></label></td>
+              <td><input type="text" id="name" name="name" required></td>
+              <td><label for="father">Father's/Guardan's Name <sup style="color:red">*</sup></label></td>
+              <td><input type="text" id="father" name="father" required></td>
+            </tr>
+            <tr>
+              <td><label for="date">Date of birth <sup style="color:red">*</sup></label></td>
+              <td><input type="date" id="date" required> </td>
+              <td> <label >Gender<sup style="color:red">*</sup></label></td>
+              <td><input type="radio"id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label> 
+            </tr>
+            <tr>  
+              <td><label for="number">Aadhaar No</label></td>
+              <td><input type="text"id="number"name="number" maxlength="12"></td>
+              <td><label for="num">WhatsApp No<sup style="color:red">*</sup></label></td>
+              <td><input type="tel"id="num" name="num" required></td>
+            </tr>
+            <tr>
+              <td><label for="file">Photo<span style="color: red;">*</span></label></td>
+              <td><input type="file"id="file"name="file" required></td>
+              <td><label for="email">Email<sup style="color: red">*</sup></label></td>
+              <td><input type="email" name="email" id="email"  required></td>
+            </tr>
+           </table>
+            </fieldset>
+
+            <fieldset><legend style="background:lightblue;">Residential Address Details</legend>
+            <table width="100%">
+             <tr>
+                <td><lable for="text">Applicant's Address:<sup style="color:red">*</sup></lable></td>
+                <td><textarea name="text" id="text" required></textarea></td>
+                <td><lable for="dist">District<sup style="color:red">*</sup></lable></td>
+                <td><select name="District" id="dist" required>
+                        <option>Hyderabad</option>
+                        <option value="">kphb</option>
+                        <option>Nizamabad</option>
+                        <option>Varangal</option>
+                    </select></td></tr>
+                <tr>
+                    <td><lable for="Mandal">Mandal<sup style="color:red">*</sup></lable></td>
+                    <td><select name="Mandal" id="Mandal" required>
+                        <option>Hyderabad</option>
+                        <option>Nizamabad</option>
+                        <option>Varangal</option>
+                    </select></td>
+                    <td><lable for="Village">Village<sup style="color:red">*</sup></lable></td>
+                    <td><select name="Village" id="Village" required>
+                        <option>Hyderabad</option>
+                        <option>Nizamabad</option>
+                        <option>Varangal</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><lable for="code">Pincode<sup style="color:red">*</sup></lable></td>
+                    <td><input type="text" id="code" name="Pincode" maxlength="6" required></td>
+                </tr>
+            </table>            
+        </fieldset>
+
+            <fieldset><legend style="background:lightblue;">Pass Type Details</legend>
+                <table>
+                    <tr>
+                        <td><lable for="">City<sup style="color:red">*</sup></lable></td>
+                        <td><select name="City" id="city" required>
+                        <option>Hyderabad</option>
+                        <option>Nizamabad</option>
+                        <option>Varangal</option>
+                    </select></td>
+                    </tr> 
+                <tr>
+                    <td><lable for="pass">Pass type<sup style="color:red">*</sup></lable></td>
+                    <td><select name="Pass type" id="pass" required>
+                        <option>------Select------</option>
+                    </select></td>
+                </tr></table>
+            </fieldset>
+
+            <fieldset><legend style="background:lightblue;">Mode of Payment & Pass Collection</legend>
+                <table>
+                    <tr>
+                        <td><lable for="">Payment Mode<sup style="color:red">*</sup></lable></td>
+                        <td> <select name="Payment Mode" id="pay" required>
+                        <option>Select Payment Mode</option>
+                    </select> </td>
+                    </tr>
+                    <tr>
+                        <td><lable for="Delivery">Pass Delivery Mode<sup style="color:red">*</sup></lable></td>
+                        <td><select name="Pass Delivery Mode" id="Delivery" required>
+                        <option>Select Pass Delivery Mode</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <td><lable for="collect">Center at which you want to collect pass<sup style="color:red">*</sup></lable></td>
+                        <td> <select name="Center at which you want to collect pass" id="collect" required>
+                        <option>------Select------</option>
+                    </selec</td>
+                    </tr>
+                </table>
+            </fieldset>
+                <center><img src="./chapta.jpg" width="200">
+                    <br>
+                    <input type="text" name="" id="">
+                    <br>
+                <input type="submit"></center>
+            </center>
+        </form>
+    </body>
+
+</html>
